@@ -1,0 +1,185 @@
+/* Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@700&display=swap');
+
+/* GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Fonts */
+  --main-font: 'Markazi Text', serif;
+
+  /* Colors */
+
+  --primary-color: #07121A;
+  --second-color: #111111;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: var(--main-font);
+  color: #fff;
+}
+
+/* HEADER */
+
+header {
+  display: inline-block;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--second-color);
+}
+
+header h1 {
+  text-align: center;
+  font-size: 5em;
+  color: #C28F2C;
+}
+
+/* MAIN */
+
+main {
+  text-align: center;
+  margin: 40px;
+}
+
+main h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+main .icone-jogador {
+  border-radius: 50%;
+  width: 5%;
+  vertical-align: bottom;
+}
+
+main h3 {
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.container1 img {
+  width: 500px;
+  height: 300px;
+}
+
+.container1 h4 {
+  font-size: 30px;
+}
+
+/* Configurações para fazer o primeiro carrossel no JS */
+
+section.carrossel1 {
+  overflow: hidden;
+  height: 400px;
+  width:  500px;
+  margin: 0 auto;
+}
+
+div.container1 {
+  display: flex;
+  transform: translateX(0);
+  transition: .4s ease-in-out;
+}
+
+/* --------------------------------------------------- */
+
+main .tipos-campeao {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+main .tipos-campeao div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .tipos-campeao div img {
+  width: 30%;
+}
+
+main .tipos-campeao div span {
+  font-size: 25px;
+}
+
+main .tipo-apagado {
+  filter: brightness(.2);
+}
+
+.container2 h4 {
+  font-size: 30px;
+  margin: 20px 0px;
+}
+
+/* Configurações para fazer o segundo carrossel no JS */
+
+section.carrossel2 {
+  overflow: hidden;
+  display: flex;
+  height: 450px;
+  width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#carrossel {
+  display: flex;
+  transform: translateX(0);
+  transition: .4s ease-in-out;
+}
+
+/* Botões Carrossel */
+
+section.botoes button {
+  position: absolute;
+  top: 180%;
+  background-color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 3em;
+}
+
+section.botoes #left {
+  left: 15%;
+}
+
+section.botoes #right {
+  right: 15%;
+}
+
+/* -------------------------------------------------- */
+
+main p {
+  font-size: 25px;
+  text-align: justify;
+}
+
+.slide {
+  margin-bottom: 150px;
+  height: 400px;
+  width: 700px;
+  
+}
+
+.slide p {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--second-color);
+  padding: 30px;
+  text-align: center;
+  font-size: 2em;
+}
